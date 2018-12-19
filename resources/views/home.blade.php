@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="topbtn" title="回頁首"></div>
+
 	   <!-- 弹窗1 -->
         <div class="pop pop-video">
             <a href="#" class="video-close">x</a>
@@ -335,6 +335,7 @@
             </div>
         </header>
         <div class="content-wrap">
+            <div class="topbtn" title="回頁首"></div>
             <div class="content welfare">
                 <div class="main">
 				<div class="welfare-items">

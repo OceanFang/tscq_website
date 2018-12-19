@@ -24,7 +24,7 @@ ul, li, p, span, h1, h2, h3{
 	height: 364px;
 	margin: 0 auto;
 	background-color: #CCC;
-	background-image: url(/images/launcher/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -134,4 +134,16 @@ ul, li, p, span, h1, h2, h3{
 }
 .notice li a:hover { color: #fff4d1; }
 .notice li a p {float: left;}
-.notice li a span.time { float: right; }
+.notice li a span{ 
+    display: inline-block;
+    vertical-align: middle;
+}
+.notice li a span.tit { 
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice li a span.time { 
+    //float: right;
+}

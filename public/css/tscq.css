@@ -1094,8 +1094,15 @@ footer {
   width: 100%;
   height: 100%;
 }
-.news .news-list ul li .time {
-  float: right;
+.news .news-list ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.news .news-list ul li span.tit {
+  width: 940px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .news .news-page {
   padding: 20px 0;
@@ -1148,7 +1155,11 @@ footer {
 /**************index/ */
 @media only screen and (min-width: 1300px) {
   .media-footer.float-on {
-    background: #f3f8fe;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+2,0.65+99 */
+    background: -moz-linear-gradient(top, transparent 0%, transparent 2%, rgba(0, 0, 0, 0.5) 40%, black 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 2%, rgba(0, 0, 0, 0.5) 40%, black 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.5) 40%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
   }
 }
 @media only screen and (min-width: 1300px) {

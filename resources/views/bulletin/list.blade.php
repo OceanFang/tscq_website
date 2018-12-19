@@ -31,7 +31,7 @@
             							<a href="/bulletin/info/{{ $val->id }}">
             								<span class="label">【{{ $short }}】</span>
             								<span class="tit" >{{ $val->title }}</span>
-            								<span class="time">{{ substr($val->created_at, 0, 10) }}</span>
+            								<span class="time">{{ date_format($val->created_at, 'm-d') }}</span>
             							</a>
             						</li>
             						@endforeach

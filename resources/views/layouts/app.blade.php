@@ -12,6 +12,8 @@ $v = mt_rand(1, 99);
     <meta name="description" content="改編自同名知名網路小說，由遊戲綠洲代理，中國知名大廠靈石網絡科技開發，玄幻修真大型多人線上遊戲《吞噬蒼穹Online》，以一流的畫面和全空間飛行戰鬥為核心特色，打造原創端遊高水準大作，再現原汁原味的仙俠大世界。" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="/favicon.ico">
+
     <link rel="stylesheet" href="{{ URL::asset('/css/swiper.min.css?v'. $v) }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/liteaccordion.css?v'. $v) }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/tscq.css?v'. $v) }}">
