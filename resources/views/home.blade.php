@@ -294,7 +294,7 @@
                     </a>
                 </div>
                 <div class="media-footer-down media-footer-btn">
-                    <a href="#" title="主程式下載">
+                    <a href="#" onclick="javascript:alert('敬請期待')" title="主程式下載">
                     主程式下載<p>登入送888大禮包</p>
                     </a>
                 </div>
@@ -320,7 +320,7 @@
               </div>
               </div>
                 <div class="head-down-btn">
-                    <a href="#" title="《吞噬蒼穹》客戶端極速下載">極速下載吞噬蒼穹客戶端</a>
+                    <a href="#" onclick="javascript:alert('敬請期待')" title="《吞噬蒼穹》客戶端極速下載">極速下載吞噬蒼穹客戶端</a>
                 </div>
 				 <div class="head-reg-iframe">
                         <div class="reg-tab">
@@ -474,19 +474,19 @@
                                 <img src="images/data-icon.png" alt="遊戲資料">
                             </div>
                             <div class="media-rotate-back clearfix">
-                                <a class="media-back-item1" href="#" target="_blank" title="新手指南">
+                                <a class="media-back-item1" href="#" onclick="javascript:alert('敬請期待')" target="_blank" title="新手指南">
                                     <img src="images/icon-forum.png" alt="新手指南">
                                     <p>新手指南</p>
                                 </a>
-                                <a class="media-back-item2" href="#" target="_blank" title="精彩活動">
+                                <a class="media-back-item2" href="#" onclick="javascript:alert('敬請期待')" target="_blank" title="精彩活動">
                                     <img src="images/data-fish.png" alt="精彩活動">
                                     <p>精彩活動</p>
                                 </a>
-                                <a class="media-back-item3" href="#" target="_blank" title="特色玩法">
+                                <a class="media-back-item3" href="#" onclick="javascript:alert('敬請期待')" target="_blank" title="特色玩法">
                                     <img src="images/data-career.png" alt="特色玩法">
                                     <p>特色玩法</p>
                                 </a>
-                                <a class="media-back-item4" href="#" target="_blank" title="高手進階">
+                                <a class="media-back-item4" href="#" onclick="javascript:alert('敬請期待')" target="_blank" title="高手進階">
                                     <img src="images/data-action.png" alt="高手進階">
                                     <p>高手進階</p>
                                 </a>
@@ -497,19 +497,19 @@
                                 <img src="images/contact-icon.png" alt="社群討論">
                             </div>
                             <div class="media-rotate-back media-rotate-back2 clearfix">
-                                <a class="media-back-item1" href="javascript:;"  title="官方粉絲團">
+                                <a class="media-back-item1" href="https://www.facebook.com/TSCQOnline/?epa=SEARCH_BOX"  title="官方粉絲團">
                                     <img src="images/icon-fb.png" alt="官方粉絲團">
                                     <p>官方粉絲團</p>
                                 </a>
-                                <a class="media-back-item2" href="#" target="_blank" title="巴哈姆特">
+                                <a class="media-back-item2" href="https://forum.gamer.com.tw/A.php?bsn=26711" target="_blank" title="巴哈姆特">
                                     <img src="images/icon-bh.png" alt="巴哈姆特">
                                     <p>巴哈姆特</p>
                                 </a>
-                                <a class="media-back-item3" href="#" target="_blank" title="遊戲基地">
+                                <a class="media-back-item3" href="https://www.gamebase.com.tw/forum/76571/thread/ALL" target="_blank" title="遊戲基地">
                                     <img src="images/icon-gb.png" alt="遊戲基地">
                                     <p>遊戲基地</p>
                                 </a>
-                                <a class="media-back-item4" href="#" target="_blank" title="客服中心">
+                                <a class="media-back-item4" href="https://www.oasisgames.com.tw/issue_tickets/new" target="_blank" title="客服中心">
                                     <img src="images/icon-server.png" alt="客服中心">
                                     <p>客服中心</p>
                                 </a>

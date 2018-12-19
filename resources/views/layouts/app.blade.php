@@ -78,10 +78,10 @@ $v = mt_rand(1, 99);
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="{{ URL::asset('/js/jquery.easing.1.3.js') }}"></script>
-        <script src="{{ URL::asset('/js/swiper.min.js') }}"></script>
-        <script src="{{ URL::asset('/js/tscq.js') }}"></script>
-        <script src="{{ URL::asset('/js/liteaccordion.jquery.js') }}"></script>
+        <script src="{{ URL::asset('/js/jquery.easing.1.3.js?v'. $v) }}"></script>
+        <script src="{{ URL::asset('/js/swiper.min.js?v'. $v) }}"></script>
+        <script src="{{ URL::asset('/js/tscq.js?v'. $v) }}"></script>
+        <script src="{{ URL::asset('/js/liteaccordion.jquery.js?v'. $v) }}"></script>
 
 
         <!-- Google Tag Manager (noscript) -->

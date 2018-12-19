@@ -20,24 +20,24 @@ $(function() {
         // 头部视频
         $('.head-video-btn').click(function () {
             $(".popbg, .pop").show();
-           video('ugVNDvnDDpA');
+           video('ypAuNqS0Jqo');
         });
         $('.career-mov').click(function () {
             $(".popbg, .pop").show();
             if($(this).hasClass("mov01")){
-                video('YPThsaYrwBw');
+                video('-cZAwXD1IwE');
             }
             else if($(this).hasClass("mov02")){
-                video('gD2mhJ3ByGQ');
+                video('O6IJ7SiRUfw');
             }
             else if($(this).hasClass("mov03")){
-                video('oFNox2Z0Apo');
+                video('rdUY_RudtJM');
             }
             else if($(this).hasClass("mov04")){
-                video('xV47lwuqT3U');
+                video('UCUbzOToNbE');
             }
             else if($(this).hasClass("mov05")){
-                video('0mAIgtDq4cw');
+                video('LQ9rVsc-qQM');
             }
             return(false);
         });
