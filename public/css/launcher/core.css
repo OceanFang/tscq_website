@@ -2,6 +2,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif, "微軟正黑體";
 	background-color: #000;
 	color: #fff22b;
+    margin: 0;
 }
 a {
 	text-decoration: none;
@@ -20,19 +21,20 @@ ul, li, p, span, h1, h2, h3{
 }
 .clearfix:after { clear: both; }
 .wrap {
-	width: 704px;
-	height: 364px;
+	width: 698px;/*704*/
+	height: 356px;/*364*/
 	margin: 0 auto;
 	background-color: #CCC;
 	background-image: url(/images/launcher/bg.jpg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: -4px;
+    overflow: hidden;
 }
 .nav {
-    width: 584px;
-    height: 30px;
+    width: 598px;
+    height: 28px;
     font-size: 16px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-left: 100px;
 }
 .nav a{
@@ -45,7 +47,7 @@ ul, li, p, span, h1, h2, h3{
 	height: 260px;
 	//margin: 0 auto;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 .banner img {
     width: 380px;
@@ -85,19 +87,19 @@ ul, li, p, span, h1, h2, h3{
 .col-l {
     float: left;
     position: relative;
-	width: 400px;
-    height: 324px;
+	width: 396px;
+    height: 316px;
 }
 .col-r {
     float: left;
     position: relative;
-	width: 304px;
-    height: 324px;
+	width: 300px;
+    height: 316px;
 }
 /************* notice ***************************************************/
 .notice {    
-	width: 304px;
-    height: 324px;
+	width: 300px;
+    height: 316px;
 	//margin: 0 auto;
     font-size: 12px;
 }

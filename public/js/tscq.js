@@ -43,6 +43,10 @@ $(function() {
         });
         $('.video-close').click(function () {
                 $(".popbg, .pop").hide();
+                $(".pop-in iframe").each(function(index) {
+                    $(this).attr('src', $(this).attr('src'));
+                    return false;
+                });
                 return(false);
             });
         var regBtn = $('.pop-rs-nav span');

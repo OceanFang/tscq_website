@@ -1,5 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
+@php
+$v = mt_rand(1, 99);
+@endphp
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
@@ -16,7 +21,7 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 <link rel="stylesheet" href="css/launcher/unslider.css">
-<link rel="stylesheet" href="css/launcher/core.css">
+<link rel="stylesheet" href="css/launcher/core.css?v{{ $v }}">
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/unslider-min.js"></script>

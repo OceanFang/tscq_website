@@ -318,6 +318,11 @@
                         @endforeach
                     </div>
               </div>
+
+              <div class="swiper-pagination banner-nav"></div>
+              <div class="swiper-button-prev banner-prev"></div>
+              <div class="swiper-button-next banner-next"></div>
+
               </div>
                 <div class="head-down-btn">
                     <a href="#" onclick="javascript:alert('敬請期待')" title="《吞噬蒼穹》客戶端極速下載">極速下載吞噬蒼穹客戶端</a>
@@ -530,10 +535,10 @@
             spaceBetween: 30,
             loop: true,
             autoplay: 3000,
-            navigation: {
-                nextEl: '.banner-swiper .swiper-button-prev',
-                prevEl: '.banner-swiper .swiper-button-prev',
-            },
+            pagination: '.banner-nav',
+            paginationClickable: true,
+            prevButton: '.banner-prev',
+            nextButton: '.banner-next',
         });
 
         //feature

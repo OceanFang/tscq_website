@@ -52,6 +52,14 @@ class HomeController extends Controller
         return view('launcher', compact('banner', 'type_list', 'list'));
     }
 
+    public function ingameEvent()
+    {
+
+        $banner = $this->banner->getIngameEventBanner();
+
+        return view('ingameEvent', compact('banner'));
+    }
+
     // public function condition()
     // {
     //     return view('condition');
