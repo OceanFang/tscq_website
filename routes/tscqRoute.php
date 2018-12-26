@@ -11,3 +11,5 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('/launcher', 'HomeController@launcher');
+
+Route::get('/ingameevent', 'HomeController@ingameEvent');

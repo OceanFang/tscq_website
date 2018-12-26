@@ -30,4 +30,12 @@ class BannerService
         return $this->repo->getLauncherBanner();
     }
 
+    /**
+     * 取得ingame輪播banner.
+     * @return [type] [description]
+     */
+    public function getIngameEventBanner()
+    {
+        return $this->repo->getIngameEventBanner();
+    }
 }
