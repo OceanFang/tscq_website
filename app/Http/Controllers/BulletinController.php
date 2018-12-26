@@ -17,6 +17,11 @@ class BulletinController extends Controller
         $this->footerType = '';
     }
 
+    public function index(Request $request)
+    {
+        return $this->list($request);
+    }
+
     /**
      * 取得公告類別
      * @param  Request $request [description]
@@ -43,11 +48,17 @@ class BulletinController extends Controller
         $type_list = $this->bulletin->getBulletinType();
         $info = $this->bulletin->getBulletinInfo($id);
 
-        $res = $this->bulletin->getBulletinPrevNext($id, $info->type_id, $info->sort);
-        $prev = $res->prev;
-        $next = $res->next;
+        if (!$info):
 
-        return view('bulletin.info', compact('type_list', 'info', 'prev', 'next'));
+            return redirect('bulletin');
+        else:
+
+            $res = $this->bulletin->getBulletinPrevNext($id, $info->type_id, $info->sort);
+            $prev = $res->prev;
+            $next = $res->next;
+
+            return view('bulletin.info', compact('type_list', 'info', 'prev', 'next'));
+        endif;
     }
 
 }

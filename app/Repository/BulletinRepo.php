@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Bulletin;
 use App\BulletinType;
+use Carbon\Carbon;
 
 class BulletinRepo
 {
@@ -20,7 +21,7 @@ class BulletinRepo
      */
     public function getBulletin($wparams)
     {
-        return $this->bulletin->selectRaw('id, type_id, date(created_at) as date, title')->where($wparams)->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(7);
+        return $this->bulletin->selectRaw('id, type_id, date(created_at) as date, title')->where($wparams)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(7);
     }
 
     /**
@@ -42,7 +43,7 @@ class BulletinRepo
      */
     public function getBulletinList($id)
     {
-        return $this->bulletin->where('type_id', $id)->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(15);
+        return $this->bulletin->where('type_id', $id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(15);
     }
 
     /**
@@ -53,7 +54,8 @@ class BulletinRepo
      */
     public function getBulletinInfo($id)
     {
-        return $this->bulletin->where('id', $id)->first();
+        $res = $this->bulletin->where('id', $id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->first();
+        return empty($res) ? false : $res;
     }
 
     /**
@@ -64,7 +66,7 @@ class BulletinRepo
      */
     public function getBulletinPrev($id, $type_id, $sort)
     {
-        $res = $this->bulletin->select('id')->where('id', '<>', $id)->where('sort', '<', $sort)->where('type_id', $type_id)->orderBy('sort', 'DESC')->orderBy('created_at', 'ASC')->limit(1)->first();
+        $res = $this->bulletin->select('id')->where('id', '<>', $id)->where('sort', '<', $sort)->where('type_id', $type_id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort', 'DESC')->orderBy('created_at', 'ASC')->limit(1)->first();
         return empty($res) ? false : $res;
     }
 
@@ -76,7 +78,7 @@ class BulletinRepo
      */
     public function getBulletinNext($id, $type_id, $sort)
     {
-        $res = $this->bulletin->select('id')->where('id', '<>', $id)->where('sort', '>', $sort)->where('type_id', $type_id)->orderBy('sort')->orderBy('created_at', 'DESC')->limit(1)->first();
+        $res = $this->bulletin->select('id')->where('id', '<>', $id)->where('sort', '>', $sort)->where('type_id', $type_id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->limit(1)->first();
         return empty($res) ? false : $res;
     }
 }
