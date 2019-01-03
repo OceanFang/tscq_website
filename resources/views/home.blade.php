@@ -286,15 +286,42 @@
         </div>
         <div class="popbg"></div>
 
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.oasisgames.com.tw/" target="_blank">
+          <img class="img-fluid" src="/images/oasis_nav_logo.png" />
+        </a>
+
+        <div id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.oasisgames.com.tw/explore" target="_blank">關於綠洲遊戲</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link btn btn-danger" href="https://www.oasisgames.com.tw/shop" target="_blank">儲值</a>
+            </li>
+              <li class="nav-item">
+            <a class="nav-link" href="https://www.oasisgames.com.tw/users/sign_up" target="_blank">註冊</a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://www.oasisgames.com.tw/issue_tickets/new" target="_blank">客服回報</a>
+          </li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="wrap">
        <div class="media-footer float-on">
                 <div class="media-footer-reg media-footer-btn">
-                    <a href="http://www.oasisgames.com.tw/users/sign_up" title="加入會員">
+                    <a href="https://www.oasisgames.com.tw/users/sign_up" title="加入會員" target="_blank">
                     加入會員<p>搶先預約註冊拿滿禮</p>
                     </a>
                 </div>
                 <div class="media-footer-down media-footer-btn">
-                    <a href="#" onclick="javascript:alert('敬請期待')" title="主程式下載">
+                    <a href="http://smarturl.it/TSCQ_download" title="主程式下載" target="_blank">
                     主程式下載<p>登入送888大禮包</p>
                     </a>
                 </div>
@@ -325,11 +352,11 @@
 
               </div>
                 <div class="head-down-btn">
-                    <a href="#" onclick="javascript:alert('敬請期待')" title="《吞噬蒼穹》客戶端極速下載">極速下載吞噬蒼穹客戶端</a>
+                    <a href="http://smarturl.it/TSCQ_download" title="《吞噬蒼穹》客戶端極速下載" target="_blank">極速下載吞噬蒼穹客戶端</a>
                 </div>
 				 <div class="head-reg-iframe">
                         <div class="reg-tab">
-                            <div class="reg-btn"><a href="http://www.oasisgames.com.tw/users/sign_up" target="_blank"></a></div>
+                            <div class="reg-btn"><a href="https://www.oasisgames.com.tw/users/sign_up" target="_blank"></a></div>
                         </div>
                     </div>
                     <div class="head-gift">
