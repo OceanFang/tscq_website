@@ -364,7 +364,7 @@ header {
 }
 .media-footer.float-on {
   position: fixed;
-  margin-top: 90vh;
+  margin-top: calc(90vh - 80px);
   margin-left: -50%;
   width: 100%;
 }
