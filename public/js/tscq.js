@@ -1,6 +1,9 @@
 $(function() {
-	//$('body').append('<div class="fuchuang" style="display:block"><img src="//tscq.ixinyou.com/images/fc-180921.png" alt="浮窗" /></div>'); 
-	//$('header .main').append('<div class="start-time1">11月17日 火爆开启</div>'); 
+	$('body').append('<div class="fuchuang" style="display:none"><img src="images/vip-btn.png" alt="浮窗" /></div>'); 
+    
+    $('.fuchuang').click(function () {
+        $(".popbg, .pop-vip").show();
+    });
     
     $('.career-info').liteAccordion({
             containerWidth : 1100,                   // fixed (px) 
@@ -58,15 +61,16 @@ $(function() {
             });
             // 点击弹窗事件
             $('.welfare-item').click(function () {
-                if($(this).index()==0){
+                /*if($(this).index()==0){
                     $(".popbg, .pop-evt#pop-evt1").show();
                 }
                 else if($(this).index()==1){
                     $(".popbg, .pop-evt#pop-evt2").show();
-                }
+                }*/
+                $(".popbg, .pop-evt#pop-evt4").show();
             });
             $('.pop-evt-close').click(function () {
-                $(".popbg, .pop-evt").hide();
+                $(".popbg, .pop-evt, .pop-vip").hide();
                 return(false);
             });
 
