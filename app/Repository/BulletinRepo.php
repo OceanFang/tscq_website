@@ -21,7 +21,7 @@ class BulletinRepo
      */
     public function getBulletin($wparams)
     {
-        return $this->bulletin->selectRaw('id, type_id, date(created_at) as date, title')->where($wparams)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(7);
+        return $this->bulletin->selectRaw('id, type_id, date(created_at) as date, title')->where('game', 'tscq')->where($wparams)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(7);
     }
 
     /**
@@ -32,7 +32,7 @@ class BulletinRepo
      */
     public function getBulletinType()
     {
-        return $this->bulletin_type->get();
+        return $this->bulletin_type->where('game', 'tscq')->get();
     }
 
     /**
@@ -43,7 +43,7 @@ class BulletinRepo
      */
     public function getBulletinList($id)
     {
-        return $this->bulletin->where('type_id', $id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(15);
+        return $this->bulletin->where('type_id', $id)->where('start_time', '<=', Carbon::now())->where('end_time', '>=', Carbon::now())->orderBy('sort')->orderBy('created_at', 'DESC')->paginate(1);
     }
 
     /**

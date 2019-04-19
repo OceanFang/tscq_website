@@ -77,10 +77,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="wrap" >
     <div class="nav">
         <a href="/" target="_blank">官方網站</a>
-        <a href="http://www.oasisgames.com.tw/users/sign_up" target="_blank">帳號註冊</a>
-        <a href="http://www.oasisgames.com.tw/shop" target="_blank">帳號儲值</a>
-        <a href="http://tscq.oasisgames.com.tw/bulletin/info/29" target="_blank">新手指南</a>
-        <a href="http://www.oasisgames.com.tw/issue_tickets/new" target="_blank">客服中心</a>
+        <a href="https://www.oasisgames.com.tw/users/sign_up" target="_blank">帳號註冊</a>
+        <a href="https://www.oasisgames.com.tw/shop" target="_blank">帳號儲值</a>
+        <a href="https://tscq.oasisgames.com.tw/bulletin/info/29" target="_blank">新手指南</a>
+        <a href="https://www.oasisgames.com.tw/issue_tickets/new" target="_blank">客服中心</a>
     </div>
     <div class="col-l unslider">
 		<div class="banner">
